@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIR QUALITY DETAILS</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+
+            display: inline-block;
+            margin: 10px;
+            font-style: oblique;
+            text-decoration: none;
+
+        }
+
+        .container {
+            text-align: center;
+            color: white;
+            background: black;
+        }
+
+        .link {
+            color: rgb(172, 137, 24);
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .link:hover {
+            color: yellow;
+        }
+
+        .mapboxgl-popup {
+            max-width: 200px;
+        }
+
+        .mapboxgl-popup-content {
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1><span style="color: rgb(150, 236, 37);">AIR QUALITY DETAILS</span></h1>
+
+    </div>
+    <div id='map' style='width: 100vw; height: 90vh;'></div>
+
+</body>
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZG9jdG9yMDA3MDA3IiwiYSI6ImNrYXFraTZ6bDFxMWYycm12ZWhwdGVzaXAifQ.VSZs6m0T3KYQ4qFQqXWu5g';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/dark-v10',
+        zoom: 1.6
+    });
+</script>
+<script src="index.js"></script>
+
+
+</html>
